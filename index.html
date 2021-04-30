@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Mostafa Shadow | IP Address Tracker</title>
+</head>
+
+<body>
+    <div class="container-all">
+        <header>
+            <div>
+                <h1>IP Address Tracker</h1>
+                <form class="container-search">
+                    <input type="text" name="search" placeholder="Search for any IP address or domain"
+                        autocomplete="off" />
+                    <button>
+                        <img src="./images/icon-arrow.svg" alt="icon">
+                    </button>
+                </form>
+            </div>
+        </header>
+        <div class="popup">Please Type Your IP</div>
+        <div class="container-info">
+            <div>
+                <h6>ip address</h6>
+                <h2 class="ip"></h2>
+            </div>
+            <div>
+                <h6>location</h6>
+                <h2 class="location"></h2>
+            </div>
+            <div>
+                <h6>Timezone</h6>
+                <h2 class="timezone"></h2>
+            </div>
+            <div>
+                <h6>ISP</h6>
+                <h2 class="isp"></h2>
+            </div>
+
+        </div>
+        <div id="mapid" class="container-map"></div>
+
+        <footer>Create By : <a href="https://www.facebook.com/MostafaShadow1" target="_blank">Mostafa Mohamed</a></footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
