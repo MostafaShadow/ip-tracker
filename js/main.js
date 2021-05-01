@@ -25,7 +25,7 @@ function getInfo() {
 
     }
     else {
-        fetch(`http://ip-api.com/json/${input.value}`)
+        fetch(`https://ipapi.co/${input.value}/json`)
             .then(response => response.json())
             .then(data => {
                 document.querySelector("header").classList.add("animation-header");
@@ -48,10 +48,10 @@ function getInfo() {
 
                 // emptyInfoVar(); in the future
 
-                let ip = data.query;
-                let locations = `${data.country} <br> ${data.city} ${data.countryCode}`;
+                let ip = data.ip;
+                let locations = `${data.country_name} <br> ${data.city} ${data.country_code}`;
                 let timeZone = data.timezone;
-                let isp = data.isp;
+                let isp = data.org;
 
                 // append text in document
                 getIp.innerHTML = ip;
@@ -63,8 +63,8 @@ function getInfo() {
 
 
                 // emptyMapVar(); in future
-                lonDate = data.lon;
-                latDate = data.lat;
+                lonDate = data.longitude;
+                latDate = data.latitude;
                 var mymap = L.map('mapid').setView([latDate, lonDate], 17);
 
             })
