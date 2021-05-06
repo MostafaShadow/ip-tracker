@@ -47,10 +47,7 @@ body {
 }
 
 .container-all header form input {
-    width: 515px;
-    font-size: 18px;
     color: var(--sup-color);
-    padding: 24px;
     font-weight: 500;
     height: 39px;
 }
@@ -72,11 +69,8 @@ button {
 .container-all header form button {
     background-color: var(--main-color);
     position: relative;
-    left: -50px;
-    width: 50px;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
-    height: 49px;
     cursor: pointer;
 }
 
@@ -102,12 +96,10 @@ button {
 }
 
 .container-all .container-info {
-    width: 80vw;
     margin: 0 auto;
     border-radius: 10px;
     background-color: var(--white);
     display: flex;
-    padding: 25px;
     justify-content: space-between;
     height: 130px;
     align-items: center;
@@ -135,22 +127,15 @@ button {
 }
 
 .container-all .container-info > div h6 {
-    margin-bottom: 20px;
     text-transform: uppercase;
     color: var(--sup-color);
-    letter-spacing: 1px;
-    font-size: 12px;
-    font-weight: 600;
 }
 
 .container-all .container-info > div h2 {
     font-weight: 700;
-    font-size: 20px;
 }
 
 .container-map {
-    margin-bottom: 10px;
-    height: 70vh;
     background-color: transparent;
 }
 
@@ -168,13 +153,10 @@ button {
 }
 
 footer {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     letter-spacing: 3px;
-    font-weight: 900;
     color: #fff;
-    font-size: 15px;
 }
 footer a {
     margin-left: 3px;
@@ -251,5 +233,137 @@ footer a:hover {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+/* responsive */
+
+@media (min-width: 350px) {
+    .container-all header form {
+        margin-left: 20px;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+    }
+    .container-all header form input {
+        width: 270px;
+        font-size: 10px;
+        padding: 5px;
+        font-weight: 900;
+    }
+    .container-all header form button {
+        width: 35px;
+        margin-left: -27px;
+        height: 40px;
+    }
+    .container-all .container-info {
+        width: 100vw;
+        margin-top: -25px;
+        justify-content: space-between;
+        flex-wrap: wrap !important;
+        height: 160px;
+        border-radius: 7px !important;
+    }
+    .container-all .container-info > div {
+        width: 140px;
+        padding: 10px;
+    }
+    .container-all .container-info > div h6 {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .container-all .container-info > div h2 {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .container-map {
+        height: 90vh;
+    }
+    footer {
+        margin-top: 7px;
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 420px) {
+    .container-all header form input {
+        width: 320px;
+    }
+
+    .container-all .container-info {
+        width: 90vw;
+        border-radius: 10px;
+    }
+    .container-all .container-info > div {
+        width: 170px;
+    }
+}
+
+@media (min-width: 507px) {
+    .container-all header form input {
+        width: 340px;
+    }
+
+    .container-all .container-info > div {
+        width: 200px;
+    }
+}
+
+@media (min-width: 667px) {
+    .container-all header form input {
+        width: 400px;
+    }
+    .container-all .container-info > div {
+        width: 220px;
+    }
+}
+
+@media (min-width: 720px) {
+    .container-all header form input {
+        width: 400px;
+    }
+    .container-all .container-info {
+        width: 95vw;
+    }
+    .container-all .container-info > div {
+        width: 170px;
+    }
+}
+
+@media (min-width: 820px) {
+    .container-all header form input {
+        width: 515px;
+        font-size: 18px;
+        padding: 24px;
+    }
+    .container-all header form button {
+        width: 50px;
+        left: -17px;
+        height: 49px;
+    }
+    .container-all .container-info {
+        width: 90vw;
+        padding: 25px;
+        margin-top: -15px;
+    }
+    .container-all .container-info > div h6 {
+        letter-spacing: 1px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .container-all .container-info > div h2 {
+        font-size: 20px;
+    }
+    .container-map {
+        height: 70vh;
+        margin-bottom: 10px;
+    }
+    footer {
+        font-size: 15px;
+        margin-top: 50px;
+        font-weight: 900;
     }
 }
