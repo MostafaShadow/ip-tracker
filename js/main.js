@@ -5,7 +5,7 @@ let popup = document.querySelector(".popup");
 let getIp = document.querySelector(".ip");
 let getLocations = document.querySelector(".location");
 let getTimezone = document.querySelector(".timezone");
-let getIsp = document.querySelector(".isp");
+let getOrg = document.querySelector(".org");
 
 button.addEventListener("click", function (e) {
     e.preventDefault();
@@ -51,13 +51,14 @@ function getInfo() {
                 let ip = data.ip;
                 let locations = `${data.country_name} <br> ${data.city} ${data.country_code}`;
                 let timeZone = data.timezone;
-                let isp = data.org;
+                let org = data.org;
+
 
                 // append text in document
                 getIp.innerHTML = ip;
                 getLocations.innerHTML = locations;
                 getTimezone.innerHTML = timeZone;
-                getIsp.innerHTML = isp;
+                getOrg.innerHTML = org;
 
                 //create var to change map
 
